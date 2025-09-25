@@ -9,8 +9,8 @@ def fib_to_ten(fib_ns_num):
 
 
 while 1:
-   xdd = input("Write your number in Fib. num system: ")
-   if len(set(xdd) - set("01")):
-      print("wrong input")
-   else:
-      print(f"{xdd} => {fib_to_ten(xdd)}")
+    xdd = input("Write your number in Fib. num system: ")
+    if len(set(xdd) - set("01")) or "11" in xdd:
+        print("wrong input")
+    else:
+        print(f"{xdd} => {fib_to_ten(xdd)}")
